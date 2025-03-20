@@ -14,7 +14,6 @@ root/
 │   │-- productRoutes.js # Routes for product CRUD (Create/Read/Update/Delete) operations
 │-- middleware/       # Middleware functions for authentication and request validation
 │   │-- authMiddleware.js # JWT-based authentication middleware to protect routes
-│-- node_modules/     # Dependencies installed via npm (automatically generated)
 │-- .env              # Environment variables storing sensitive information (e.g., JWT_SECRET, DB credentials)
 │-- server.js         # Main server file that initializes Express, connects to the database, and loads routes
 │-- package.json      # Project metadata, dependencies, and npm scripts
