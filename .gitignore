@@ -1,5 +1,6 @@
-# Ignore node_modules folders
 task2.js/node_modules/
 
-# Ignore system files
-Thumbs.db  # Windows thumbnail cache
+task3.sh/log_file_analysis_task.pdf
+task3.sh/Apache Log File Analysis Report.docx
+
+
