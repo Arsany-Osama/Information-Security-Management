@@ -12,7 +12,7 @@ if [ ! -f "$LOG_FILE" ]; then
     exit 1
 fi
 
-# Temporary directory for intermediate files
+# Temporary directory for intermediate file
 TEMP_DIR=$(mktemp -d)
 trap 'rm -rf "$TEMP_DIR"' EXIT
 
@@ -32,7 +32,7 @@ analyze_request_counts() {
     echo ""
 }
 
-# Analyze unique IP addresses and their GET/POST counts
+# Analyzing unique IP addresses and their GET/POST counts
 analyze_unique_ips() {
     awk '{print $1}' "$LOG_FILE" | sort | uniq > "$TEMP_DIR/unique_ips.txt"
     UNIQUE_IP_COUNT=$(wc -l < "$TEMP_DIR/unique_ips.txt")
